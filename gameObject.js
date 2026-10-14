@@ -23,29 +23,25 @@ function GameObject()
         if (player1.x + player1.radius >= canvas.width)
     {
         player1.x = canvas.width - player1.radius;
-        player1.xSpeed = -player1.xSpeed * 1.01;
-        player1.color = "blue";
+        player1.xSpeed = -player1.xSpeed;
     }
 
     if (player1.x - player1.radius <= 0)
     {
         player1.x = player1.radius;
-        player1.xSpeed = -player1.xSpeed * 1.01;
-        player1.color = "red";
+        player1.xSpeed = -player1.xSpeed;
     }
 
     if (player1.y + player1.radius >= canvas.height)
     {
         player1.y = canvas.height - player1.radius;
-        player1.ySpeed = -player1.ySpeed * 1.01;
-        player1.color = "yellow";
+        player1.ySpeed = -player1.ySpeed;
     }
 
     if (player1.y - player1.radius <= 0)
     {
         player1.y = player1.radius;
-        player1.ySpeed = -player1.ySpeed * 1.01;
-        player1.color = "green";
+        player1.ySpeed = -player1.ySpeed;
     }
 }
     }
